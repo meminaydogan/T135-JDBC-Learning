@@ -8,12 +8,12 @@ public class JDBCTest {
     // Ilgili Database Administrator'dan bu bilgileri alacagiz.
 
 	/*
-            type	*
-            host/ip	.  .  .
-            port	*
-            database_name	*
-            username	*
-            password	*
+             type	jdbc:mysql
+            host/ip	99.99.99.9
+            port	9999
+            database_name	u999999999_muhammedtec
+            username	u99999999_muhammeduser
+            password	9999999
      */
 
 
@@ -21,9 +21,9 @@ public class JDBCTest {
 
 
 	/*
-    URL: "*";
-    USERNAME= "*";
-    PASSWORD="*";
+     URL: "jdbc:mysql://99.99.99.9/u999999999_muhammedtec";
+    USERNAME= "u99999999_muhammeduser";
+    PASSWORD="9999999";
      */
 
 
@@ -37,16 +37,16 @@ public class JDBCTest {
 
         //  2. ADIM OLARAK DATABASE BAGLANTISI OLUSTURMAK.
 
-        String URL = "*";
-        String USERNAME= "*";
-        String PASSWORD="*";
+        String URL = "jdbc:mysql://99.99.99.9/u999999999_muhammedtec";
+        String USERNAME= "u99999999_muhammeduser";
+        String PASSWORD="9999999";
 
         Connection connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
 
 
         //  3.ADIM OALRAK SQL QUERY'SI OLUSTUR VE CALISTIR.
 
-        String Query = "*";
+        String Query = "SELECT * FROM u99999999_muhammeduser.users";
         Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 
 
